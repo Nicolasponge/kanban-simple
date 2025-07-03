@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kanban Board</title>
+  <link rel="icon" type="image/png" href="./imgs/kanban.png">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="task-creator">
+    <input type="text" id="new-task-input" placeholder="Coloque o nome da nova task">
+    <button id="add-task-button">Adicionar Task</button>
+    <button id="clear-storage-button">Limpar Todas as Tasks</button>
+  </div>
+  <div class="kanban-board">
+    <div class="column" id="todo">
+      <h2>Para Fazer</h2>
+      <div class="task-counter" id="todo-counter">0 tasks</div>
+    </div>
+    <div class="column" id="in-progress">
+      <h2>Em Progresso</h2>
+      <div class="task-counter" id="in-progress-counter">0 tasks</div>
+    </div>
+    <div class="column" id="done">
+      <h2>Feito</h2>
+      <div class="task-counter" id="done-counter">0 tasks</div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
